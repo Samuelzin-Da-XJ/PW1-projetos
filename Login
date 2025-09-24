@@ -1,0 +1,6 @@
+git config --global user.name "Samuelzin-Da-XJ"
+git config --global user.mail carlosrobertomedina11@gmail.com
+git config --global --unset-all user.mail
+git config --global --unset-all user.name
+git bash
+git config --list
