@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros - Samuel Cars</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Samuel Cars</div>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="carros.html">Carros</a>
+        <a href="contato.html">Contato</a>
+    </nav>
+</header>
+
+<section class="cars-header">
+    <h1>Nossos Carros Premium</h1>
+    <p>Veja nossa seleção exclusiva de veículos de luxo, revisados e com garantia.</p>
+</section>
+
+<section class="car-list">
+
+    <!-- CARRO 1 -->
+    <div class="car-card">
+        <img src="https://wallpapercave.com/wp/wp9819925.jpg" alt="BMW M4 Competition" class="car-img">
+        <h3>BMW M4 Competition</h3>
+        <p>510cv • 0–100km/h em 3.8s • Interior esportivo em couro</p>
+        <button onclick="comprarCarro('BMW M4 Competition')">Comprar</button>
+    </div>
+
+    <!-- CARRO 2 -->
+    <div class="car-card">
+        <img src="https://cdn.motor1.com/images/mgl/pPANP/s1/2021-audi-rs6-avant.jpg" alt="Audi RS6 Avant" class="car-img">
+        <h3>Audi RS6 Avant</h3>
+        <p>600cv • Biturbo • Melhor perua esportiva do mundo</p>
+        <button onclick="comprarCarro('Audi RS6 Avant')">Comprar</button>
+    </div>
+
+    <!-- CARRO 3 -->
+    <div class="car-card">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.eIJZC-xIWoXO07v1-mw-4QHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Mercedes AMG GT" class="car-img">
+        <h3>Mercedes AMG GT</h3>
+        <p>V8 Biturbo • Design agressivo • Performance absurda</p>
+        <button onclick="comprarCarro('Mercedes AMG GT')">Comprar</button>
+    </div>
+
+</section>
+
+<section class="carros-info-extra">
+    <h2>Por que comprar com a Samuel Cars?</h2>
+    <p>Além de oferecer carros de altíssimo padrão, nossa equipe garante suporte completo, incluindo financiamento premium, garantia estendida, proteção veicular e orientações personalizadas.</p>
+
+    <ul>
+        <li>✔ Laudo 100% aprovado</li>
+        <li>✔ Histórico completo do veículo</li>
+        <li>✔ Taxas especiais de financiamento</li>
+        <li>✔ Avaliação justa na troca</li>
+    </ul>
+</section>
+
+<footer>
+    © 2025 Samuel Cars — Concessionária Premium.
+</footer>
+
+<script>
+function comprarCarro(nomeCarro) {
+    // Redireciona para a página de confirmação com o nome do carro na URL
+    window.location.href = "confirmacao.html?carro=" + encodeURIComponent(nomeCarro);
+}
+</script>
+
+</body>
+</html>
